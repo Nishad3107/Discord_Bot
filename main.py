@@ -34,4 +34,7 @@ async def query(ctx, *, question):
         await ctx.send(f"An error occurred: {e}")
 
 
+from keep_alive import keep_alive
+keep_alive()
+
 bot.run(DISCORD_TOKEN)
